@@ -6,7 +6,9 @@ from binance.lib.utils import config_logging
 from binance.websocket.spot.websocket_client import SpotWebsocketClient as Client
 
 config_logging(logging, logging.DEBUG)
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def message_handler(message):
     print(message)
